@@ -1,12 +1,13 @@
 // This is what's going to hold our whole application's state
 import { configureStore } from "@reduxjs/toolkit";
+import TodoSlice from "./Slices/TodoSlice";
 
 // Later we're going to import our reducer functions into here
 
 export const store = configureStore({
     // map all our reducers to our store
     reducer :{
-
+        todo: TodoSlice
     }
 });
 
